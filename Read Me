@@ -1,0 +1,19 @@
+Clinic Dashboard – A Simple & Responsive Web Application
+The Clinic Dashboard is a lightweight and responsive web application designed to provide a seamless user experience for managing patients and clinic-related information. Built using HTML, CSS, JavaScript, and Bootstrap, this project focuses on UI/UX design, responsiveness, and interactivity.
+
+Key Features:
+Mock Authentication: Includes a login page and a new user registration page for demonstration purposes.
+Dashboard Sections: The Overview and My Patients sections are implemented as dynamic sections within a single HTML file, toggled based on sidebar button interactions.
+Responsive Sidebar: The sidebar automatically hides on mobile devices and appears only when triggered via an icon in the topbar, ensuring a clean and accessible UI.
+Smooth Animations: Implemented with keyframes for a subtle transition effect when toggling the sidebar.
+Technical Stack:
+HTML & CSS for structuring and styling the UI.
+Bootstrap for a responsive and modern layout.
+JavaScript for dynamic interactions and page section toggling.
+Project Goals:
+This project was developed to enhance my front-end development skills, particularly in:
+✅ Implementing responsive UI components.
+✅ Enhancing user experience through smooth animations.
+✅ Managing content dynamically using JavaScript.
+
+This dashboard serves as a foundation for more advanced clinic management systems, with potential for further enhancements like real authentication, database integration, and interactive patient data visualization.
