@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../Styles/navBars.css">
+    <link rel="stylesheet" href="../Styles/myPatients.css">
+    <link rel="stylesheet" href="../Styles/overviewSection.css">
+</head>
+
+<body>
+
+    <nav class="topBar p-3 position-fixed top-0 end-0 bg-white d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+            <button id="showSideBarBtn" class="d-lg-none btn fs-4 me-2"><i class="fa-solid fa-bars"></i></button>
+            <h3 class="navTitle fw-bold d-inline">Overview</h3>
+        </div>
+        <div>
+            <button class="btn fs-4"><i class="fa-regular fa-envelope"></i></button>
+            <button class="btn fs-4"><i class="fa-regular fa-bell"></i></button>
+        </div>
+    </nav>
+    <aside class="sideBar d-none d-lg-block vh-100 position-fixed top-0 py-4 text-white ">
+        <button id="hideSideBarBtn" class="d-lg-none btn text-white fs-3 position-absolute top-0 end-0"> <i
+                class="fa-solid fa-x"></i> </button>
+        <img src="../images/Dr-Avatar.PNG" alt="Dr Avatar" class="mx-auto d-block w-75 rounded-circle mb-3">
+        <div class="text-center">
+            <h4>Dr.Anwar</h4>
+            <p>Nour Specialty Clinic</p>
+        </div>
+        <ul class="list-unstyled text-start">
+            <li>
+                <button id="overviewBtn" class="sideBarLink btn"><i class="fa-solid fa-table"></i>Overview</button>
+            </li>
+            <li>
+                <button id="myPatientsBtn" class="sideBarLink btn"><i class="fa-brands fa-accessible-icon"></i>My
+                    Patients</button>
+            </li>
+            <li>
+                <button class="sideBarLink btn"><i class="fa-solid fa-plus"></i>Add Patients</button>
+            </li>
+            <li>
+                <button class="sideBarLink btn"><i class="fa-solid fa-gear"></i>Settings</button>
+            </li>
+            <li>
+                <a href="../index.html" class="sideBarLink btn"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+            </li>
+        </ul>
+    </aside>
+
+
+    <section id="overviewSection">
+
+        <div class="content">
+
+
+            <div class="d-flex flex-wrap justify-content-between gap-2">
+                <div id="calendar"
+                    class=" d-flex align-items-center justify-content-center col-12 col-lg-4 gap-2 bg-white fs-4 px-4 py-3 rounded">
+                    <span class="day"></span>
+                    <span>/</span>
+                    <span class="month"></span>
+                    <span>/</span>
+                    <span class="year"></span>
+                    <i class="fa-regular fa-calendar ms-2"></i>
+                </div>
+
+                <div class="order-lg-first">
+                    <h4 class=" fs-4">Welcome Dr. Anwer</h4>
+                    <p>Have A Nice Day At Great Work</p>
+                </div>
+            </div>
+
+            <div class="cardsSlider d-flex justify-content-between overflow-x-auto ">
+
+                <div class="p-3 col-lg-4">
+                    <div class="bg-white rounded-5 text-center p-5">
+                        <i class="fa-regular fa-image"></i>
+                    </div>
+                </div>
+
+                <div class="p-3 col-lg-4">
+                    <div class="bg-white rounded-5 text-center p-5">
+                        <i class="fa-regular fa-image"></i>
+                    </div>
+                </div>
+
+
+                <div class="p-3 col-lg-4">
+                    <div class="bg-white rounded-5 text-center p-5">
+                        <i class="fa-regular fa-image"></i>
+                    </div>
+                </div>
+
+                <div class="p-3 col-lg-4">
+                    <div class="bg-white rounded-5 text-center p-5">
+                        <i class="fa-regular fa-image"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mt-3 row-gap-3">
+
+                <div class="funFacts col-lg-4">
+                    <div class="bg-white p-5 text-center">
+                        <h5>Total Patients</h5>
+                        <h6>1000</h6>
+                    </div>
+                </div>
+
+                <div class="funFacts col-lg-4">
+                    <div class="bg-white p-5 text-center">
+                        <h5>Active Cases</h5>
+                        <h6>15</h6>
+                    </div>
+                </div>
+
+
+                <div class="funFacts col-lg-4">
+                    <div class="bg-white p-5 text-center">
+                        <h5>Upcoming Appoinments</h5>
+                        <h6>30</h6>
+                    </div>
+                </div>
+
+
+
+                <div class="funFacts col-lg-4">
+                    <div class="bg-white p-5 text-center">
+                        <h5>Completed Cases</h5>
+                        <h6>450</h6>
+                    </div>
+                </div>
+
+
+                <div class="funFacts col-lg-4">
+                    <div class="bg-white p-5 text-center">
+                        <h5>Pused Cases</h5>
+                        <h6>150</h6>
+                    </div>
+                </div>
+
+
+                <div class="funFacts col-lg-4">
+                    <div class="bg-white py-5 px-3 text-center">
+                        <h5>Patients with ai predictions ready</h5>
+                        <h6>1000</h6>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <section id="myPatientsSection" class="d-none">
+        <div class="content">
+            <div class="d-flex flex-wrap justify-content-between gap-2">
+                <div id="calendar"
+                    class=" d-flex align-items-center justify-content-center col-12 col-lg-4 gap-2 bg-white fs-4 px-4 py-3 rounded">
+                    <span class="day"></span>
+                    <span>/</span>
+                    <span class="month"></span>
+                    <span>/</span>
+                    <span class="year"></span>
+                    <i class="fa-regular fa-calendar ms-2"></i>
+                </div>
+                <button class="order-lg-first col-12 col-lg-3 d-block btn bg-black text-white fs-4 px-4 py-3">
+                    <i class="fa-solid fa-user-plus"></i> Add
+                    Patient</button>
+            </div>
+            <div class="row mt-3">
+                <div class=" col-lg-4 p-2">
+                    <div class="sortContainer bg-white p-3 rounded verflow-hidden">
+                        <div
+                            class="d-flex justify-content-between align-items-center fs-4 border-bottom border-1 border-black">
+                            <h4 class="d-inline fs-5">Fillter by </h4>
+                            <i class="fa-solid fa-sort-down"></i>
+                        </div>
+                        <ul class="filter list-unstyled fs-5 mt-2">
+                            <li class="d-flex justify-content-between">
+                                <label for="inProgress">In Progress</label>
+                                <input id="inProgress" name="status" type="checkbox" class="status-checkbox">
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <label for="completed">Completed</label>
+                                <input id="completed" name="status" type="checkbox" class="status-checkbox">
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <label for="stoped">Stopped</label>
+                                <input id="stoped" name="status" type="checkbox" class="status-checkbox">
+                            </li>
+                        </ul>
+                        <div
+                            class="d-flex justify-content-between align-items-center fs-5 border-bottom border-1 border-black">
+                            <h4 class="d-inline fs-5">Sort by </h4>
+                            <i class="fa-solid fa-sort-down"></i>
+                        </div>
+                        <ul class="sort list-unstyled fs-5 mt-2">
+                            <li class="d-flex justify-content-between">
+                                <label for="byName">Name</label>
+                                <input id="byName" name="status" type="checkbox" class="status-checkbox">
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <label for="bySection">Last Section</label>
+                                <input id="bySection" name="status" type="checkbox" class="status-checkbox">
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <label for="byNextAppoinment">Next Appoinment</label>
+                                <input id="byNextAppoinment" name="status" type="checkbox" class="status-checkbox">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="patientDetailsContainer col-lg-8 p-2">
+                    <div class="bg-white p-4 rounded overflow-y-scroll">
+                        <div
+                            class="d-flex justify-content-between align-items-center fs-5 border-bottom border-1 border-black">
+                            <h4 class="d-inline fs-5">Patient Details</h4>
+                            <h4 class="d-inline fs-5">View Details</h4>
+                        </div>
+                        <div class="patientDetailsInfo">
+                            <!-- This Will Fill On JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class=" col-lg-3 p-2">
+                    <div class="rescentAppoinmentContainer bg-white p-3 rounded verflow-hidden">
+                        <div class="fs-4 border-bottom border-1 border-black">
+                            <h4 class="d-inline fs-5">Rescent Appoinment </h4>
+                        </div>
+                        <div class="rescentAppoinmentContent overflow-scroll ">
+                            <!-- This Will Fill On JS -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 p-2">
+                    <div class="complatedCases bg-white p-3 rounded verflow-hidden">
+                        <div class="fs-4 border-bottom border-1 border-black">
+                            <h4 class="d-inline fs-5">Complated Cases</h4>
+                        </div>
+                        <div class=" px-5">
+                            <h5 class="label text-center">1000 <span class="d-block text-uppercase">total</span></h5>
+                            <div class="fw-bold">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="color bg-primary px-3 rounded-circle"></span>
+                                    <p class="d-inline">In Progress</p>
+                                    <p class="d-inline">400</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="color bg-success py-1 px-3 rounded-circle"></span>
+                                    <p class="d-inline">Completed</p>
+                                    <p class="d-inline">500</p>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="color bg-danger py-1 px-3 rounded-circle"></span>
+                                    <p class="d-inline">Stopped</p>
+                                    <p class="d-inline">150</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-3 p-2">
+                    <div class="rescentAppoinmentContainer bg-white p-3 rounded verflow-hidden">
+
+                        <div class="fs-4 border-bottom border-1 border-black">
+                            <h4 class="d-inline fs-6 fw-bold">Upcoming Appoinment</h4>
+                        </div>
+                        <div class="rescentAppoinmentContent overflow-scroll ">
+                            <!-- This Will Fill On JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../Scripts/main.js"></script>
+</body>
+
+</html>

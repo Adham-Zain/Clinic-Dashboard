@@ -1,0 +1,75 @@
+@import url(main.css);
+
+#myPatientsSection {
+    .sortContainer {
+        max-height: 20rem;
+    }
+
+    .patientDetailsContainer {
+
+        .patientDetailsInfo {
+            height: 15rem;
+
+            img {
+                width: 5rem;
+            }
+
+            h5 {
+                font-size: 1.2rem;
+            }
+        }
+
+    }
+
+    .rescentAppoinmentContent,
+    .upcomingAppoinmentContent {
+
+        height: 15rem;
+
+        h5 {
+            font-size: .9rem;
+        }
+
+        img {
+            width: 3rem;
+        }
+
+    }
+
+    .complatedCases {
+        height: 19rem;
+
+        .label {
+            font-size: 4rem;
+            letter-spacing: .5rem;
+            font-weight: 900;
+
+            span {
+                margin: -.5rem;
+                font-size: 3rem;
+            }
+        }
+
+        span.color {
+            height: 2rem;
+        }
+    }
+}
+
+@media (min-width:780px) {
+    #myPatientsSection {
+        .patientDetailsContainer {
+
+            .patientDetailsInfo {
+                img {
+                    width: 3rem;
+                }
+
+                h5 {
+                    font-size: .9rem;
+                }
+            }
+
+        }
+    }
+}

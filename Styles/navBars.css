@@ -1,0 +1,76 @@
+@import url(main.css);
+
+
+.sideBar {
+    background-color: var(--secondryBgColor);
+    width: fit-content;
+    z-index: 999;
+
+    .sideBarLink {
+        padding-block: 16px;
+        width: 100%;
+        color: #fff;
+        transition: .5s;
+        font-size: 1.3rem;
+        text-align: left;
+        padding-left: 1rem;
+        display: flex;
+        gap: 1rem;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        i {
+            font-size: 2.1rem;
+        }
+    }
+
+}
+
+.topBar {
+    width: 100%;
+    z-index: 999;
+}
+
+
+
+.sideBarAnimationShow {
+    animation-name: sideBarAnimationShow;
+    animation-duration: .5s;
+    animation-duration: 1;
+}
+.sideBarAnimationHide {
+    animation-name: sideBarAnimationHide;
+    animation-duration: .5s;
+    animation-duration: 1;
+}
+
+@keyframes sideBarAnimationShow {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes sideBarAnimationHide {
+    0% {
+        transform: translateX(-0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+@media (min-width:780px) {
+    .topBar {
+        width: 80%;
+    }
+    .sideBar {
+        width: 20%;
+    }}

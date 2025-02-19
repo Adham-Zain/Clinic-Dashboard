@@ -1,0 +1,24 @@
+@import url(main.css);
+#loginPage {
+    .form{
+
+        background-color: var(--mainBgColor);
+
+        #loginBtn {
+            background-color: var(--mainBtnColor);
+            width: 100%;
+        }
+        #registerBtn {
+            background-color: var(--sconryBtnColor);
+            width: 100%;
+        }
+    }
+}
+@media (min-width:780px) {
+    #loginPage {
+        #loginBtn,
+        #registerBtn {
+            width: 50%;
+        }
+    }
+}

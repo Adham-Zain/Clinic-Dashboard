@@ -1,0 +1,32 @@
+:root {
+    --mainBtnColor: #114a76;
+    --sconryBtnColor: #33a7ff;
+    --mainBgColor: #d9d9d9;
+    --secondryBgColor: #4a4a4a;
+}
+
+*.content div {
+    scrollbar-width: none;
+}
+
+.content {
+    background-color: var(--mainBgColor);
+    min-height: calc(100vh - 5rem);
+    position: absolute;
+    padding: 2rem;
+    top: 5rem;
+    right: 0;
+    width: 100%;
+}
+
+
+@media (min-width:780px) {
+
+    .content {
+        position: absolute;
+        padding: 2rem;
+        top: 5rem;
+        right: 0;
+        width: 80%;
+    }
+}

@@ -1,0 +1,29 @@
+#overviewSection{
+    .cardsSlider{
+        overflow-x: auto;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+        cursor: grab; 
+
+        &.active{
+            cursor: grabbing;
+        }
+        i{
+            font-size: 7rem;
+        }
+
+    }
+
+    .funFacts{
+        div{
+            height: 15rem;
+        }
+        h5{
+            font-size: 1.5rem;
+        }
+        h6{
+            font-size: 3rem;
+            font-weight: 900;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@import url(main.css);
+#registerPage {
+    .form {
+        background-color: var(--mainBgColor);
+        .form-floating {
+            width: 100%;
+        }
+    }
+    #loginBtn {
+        background-color: var(--mainBtnColor);
+    }
+    #registerBtn {
+        background-color: var(--sconryBtnColor);
+    }
+}
+@media (min-width:780px) {
+
+    #registerPage {
+        .form {
+            .form-floating {
+                width: calc(50% - .5rem);
+            }
+        }
+    }
+}
